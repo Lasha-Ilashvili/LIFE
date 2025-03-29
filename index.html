@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FutureVerse | HackTheFuture 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <header>
+    <div>
+      <h1 class="glitch">FutureVerse</h1>
+      <p class="typewriter">Immersive Sci-Fi Game | HackTheFuture 2025 Project</p>
+      <a href="#vision" class="btn">Explore the Vision</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="split" id="vision">
+      <div>
+        <h2>About the Game</h2>
+        <p>FutureVerse is a narrative-driven sci-fi exploration game where your decisions shape the timeline.</p>
+      </div>
+      <div>
+        <h2>Our Vision</h2>
+        <p>We aim to build adaptive games that respond to your choices, understand your strategies, and deliver unforgettable stories.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Hackathon Entry</h2>
+      <p>Developed at HackTheFuture 2025, this game represents agile teamwork and technical creativity.</p>
+    </section>
+
+    <section>
+      <h2>Meet the Team</h2>
+      <div class="split">
+        <div><strong>Magari kaci</strong> – Lead Developer</div>
+        <div><strong>Magari kaci</strong> – Game Designer</div>
+        <div><strong>Magari kaci</strong> – AI/Systems Engineer</div>
+        <div><strong>Magari kaci</strong> – UI/UX Designer</div>
+        <div><strong>Magari kaci</strong> – Sound & Music Director</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gameplay Trailer</h2>
+      <div class="trailer-box">
+        <video controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section>
+      <h2>Screenshots</h2>
+      <div class="carousel-wrapper">
+        <button class="arrow left" id="prevBtn"><span>⟨</span></button>
+        <div class="carousel" id="carousel">
+          <img src="https://picsum.photos/seed/game1/400/250" alt="1">
+          <img src="https://picsum.photos/seed/game2/400/250" alt="2">
+          <img src="https://picsum.photos/seed/game3/400/250" alt="3">
+          <img src="https://picsum.photos/seed/game4/400/250" alt="4">
+          <img src="https://picsum.photos/seed/game5/400/250" alt="5">
+        </div>
+        <button class="arrow right" id="nextBtn"><span>⟩</span></button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Download the Game</h2>
+      <p>Try the prototype on your system. Click the button below to download:</p>
+      <a href="assets/FutureVerse_v1.zip" class="btn" download>Download FutureVerse (ZIP)</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 FutureVerse Team · Built at HackTheFuture</p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <button class="modal-arrow left" onclick="prevImage()"><span>⟨</span></button>
+    <img id="modalImg" />
+    <button class="modal-arrow right" onclick="nextImage()"><span>⟩</span></button>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
