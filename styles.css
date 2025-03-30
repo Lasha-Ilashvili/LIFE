@@ -297,22 +297,18 @@ section.visible {
   transform: translateY(0);
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* h1.glitch {
     font-size: 2.5rem;
   } */
   
-  /* body{
+  body{
     padding: 0;
   }
 
   p.typewriter {
     font-size: 100%;
-  } */
-  @media screen and (max-width:991px) and (min-width:768px) {
-    .typewriter-text {
-        overflow: visible;
-    }
+  }
 
   /* .btn {
     padding: 0.6rem 1.5rem;
