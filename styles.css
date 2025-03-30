@@ -303,15 +303,11 @@ section.visible {
   }
 
   p.typewriter {
-    animation: none !important;
-    white-space: normal !important;
-    overflow: visible !important;
-    border-right: none !important;
+    animation: none;
+    border-right: none;
     opacity: 0;
-    animation: fadeIn 0.8s ease-in-out 0.2s forwards;
-    text-align: center;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
   }
-  
 
   h2 {
     font-size: 1.5rem;
@@ -373,5 +369,5 @@ section.visible {
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-  }  
+  }
 }
