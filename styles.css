@@ -297,24 +297,25 @@ section.visible {
   transform: translateY(0);
 }
 
-/* @media screen and (max-width: 768px) {
-  /* h1.glitch {
+@media screen and (max-width: 768px) {
+  h1.glitch {
     font-size: 2.5rem;
-  } */
+  } 
   
-  /* body{
-    padding: 0;
+  p.typewriter {
+    animation: none !important;
+    border-right: none !important;
+    white-space: normal !important;
+    opacity: 0;
+    animation: fadeInMobile 0.8s ease-in-out forwards;
   }
 
-  p.typewriter {
-    font-size: 100%;
-  } */
-  @media screen and (max-width:991px) and (min-width:768px) {
-    p.typewriter {
-        overflow: visible;
-    }
+  @keyframes fadeInMobile {
+    0% { opacity: 0; transform: translateY(5px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
 
-  /* .btn {
+  .btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
   }
@@ -365,5 +366,5 @@ section.visible {
   footer {
     padding: 1rem;
     font-size: 0.8rem;
-  } */
+  }
 }
