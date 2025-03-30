@@ -58,6 +58,10 @@ p.typewriter {
   overflow: hidden;
   border-right: 2px solid var(--primary);
   animation: typing 3.5s steps(40, end), blink 0.8s infinite;
+  max-width: 90vw;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 @keyframes typing {
