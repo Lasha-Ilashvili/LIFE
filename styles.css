@@ -52,16 +52,19 @@ h1.glitch {
   80% { transform: translate(1px, -1px); }
 }
 
-p.typewriter {
-  font-size: 1.2rem;
+.typewriter {
+  display: block;
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90vw;
+
   white-space: nowrap;
   overflow: hidden;
+  box-sizing: border-box;
+
   border-right: 2px solid var(--primary);
   animation: typing 3.5s steps(40, end), blink 0.8s infinite;
-  max-width: 90vw;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
 }
 
 @keyframes typing {
