@@ -297,15 +297,16 @@ section.visible {
   transform: translateY(0);
 }
 
-/* === MOBILE RESPONSIVE STYLES === */
 @media (max-width: 768px) {
   h1.glitch {
     font-size: 2.5rem;
   }
 
   p.typewriter {
-    font-size: 1rem;
-    white-space: normal;
+    animation: none;
+    border-right: none;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
   }
 
   h2 {
@@ -363,5 +364,10 @@ section.visible {
   footer {
     padding: 1rem;
     font-size: 0.8rem;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 }
