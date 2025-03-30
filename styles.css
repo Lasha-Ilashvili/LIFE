@@ -297,17 +297,15 @@ section.visible {
   transform: translateY(0);
 }
 
+/* === MOBILE RESPONSIVE STYLES === */
 @media (max-width: 768px) {
   h1.glitch {
     font-size: 2.5rem;
   }
 
   p.typewriter {
-    font-size: 1.2rem;
-    white-space: wrap;
-    overflow: hidden;
-    border-right: 2px solid var(--primary);
-    animation: typing 3.5s steps(40, end), blink 0.8s infinite;
+    font-size: 1rem;
+    white-space: normal;
   }
 
   h2 {
@@ -365,10 +363,5 @@ section.visible {
   footer {
     padding: 1rem;
     font-size: 0.8rem;
-  }
-
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
   }
 }
