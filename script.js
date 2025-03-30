@@ -1,12 +1,12 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
+    if (entry.intersectionRatio > 0.3) {
       entry.target.classList.add("visible");
-    } else {
-      entry.target.classList.remove("visible"); // makes it reversible like Apple
+    } else if (entry.intersectionRatio < 0.1) {
+      entry.target.classList.remove("visible");
     }
   });
-}, { threshold: 0.2 });
+}, { threshold: [0, 0.1, 0.3, 0.5, 0.7, 1] });
 
 document.querySelectorAll("main section").forEach(section =>
   observer.observe(section)
